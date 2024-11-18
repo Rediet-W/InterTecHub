@@ -13,20 +13,20 @@ This is a simple backend project built with Node.js and Express.
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Rediet-W/InterTecHub
    # Navigate to the project directory:
    
    cd <project-folder>
    # Install dependencies:
    
    npm install
-   Run the server in development mode:
+   # Run the server in development mode:
    
    npm run dev
-   Build and run the server in production mode:
+   # Build and run the server in production mode:
    
    npm run build
    npm start
     ```
 ## Deployed Link
-Access the live application here:[InterTechHub Stage 1 Backend](https://intertechub-stage1-backend.onrender.com/)
+Access the live application here: [InterTechHub Stage 1 Backend](https://intertechub-stage1-backend.onrender.com/)
