@@ -1,12 +1,13 @@
-# Simple Web Server (TypeScript)
+# Stage 1 Backend
 
-This is a simple Node.js server with three routes that return static messages, built with TypeScript.
+This is a simple backend project built with Node.js and Express.
 
 ## Routes
+- `/`: Returns instructions to visit other routes.
+- `/name`: Returns your full name.
+- `/hobby`: Returns your favorite hobby as a JSON object.
+- `/dream`: Returns a motivational message about your dream.
 
-1. `/name`: Returns the developer's name as plain text.
-2. `/hobby`: Returns the developer's favorite hobby as JSON.
-3. `/dream`: Returns a motivational message about the developer's dream.
 
 ## Setup Instructions
 
@@ -27,16 +28,9 @@ This is a simple Node.js server with three routes that return static messages, b
     npm run build
     npm start
 
-    # open your browser and navigate to
-    Open your browser and navigate to:
-    # for eg if your port is 3000 like
-    http://localhost:3000/
-    http://localhost:3000/name
-    http://localhost:3000/hobby
-    http://localhost:3000/dream
    ```
 
 ```
-Live Server
 Deployed Link
+https://intertechub-stage1-backend.onrender.com/
 ```
