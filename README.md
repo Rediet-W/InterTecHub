@@ -8,29 +8,25 @@ This is a simple backend project built with Node.js and Express.
 - `/hobby`: Returns your favorite hobby as a JSON object.
 - `/dream`: Returns a motivational message about your dream.
 
-
 ## Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
    git clone <repository-url>
-    # Navigate to the project directory:
-    cd <project-folder>
-    # Install dependencies:
-
-    npm install
-   # Run the server in development mode:
-
-    npm run dev
-    # Build and run the server in production mode:
-
-    npm run build
-    npm start
-
-   ```
-
-```
-Deployed Link
-https://intertechub-stage1-backend.onrender.com/
-```
+   # Navigate to the project directory:
+   
+   cd <project-folder>
+   # Install dependencies:
+   
+   npm install
+   Run the server in development mode:
+   
+   npm run dev
+   Build and run the server in production mode:
+   
+   npm run build
+   npm start
+    ```
+## Deployed Link
+Access the live application here:[InterTechHub Stage 1 Backend](https://intertechub-stage1-backend.onrender.com/)
