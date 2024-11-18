@@ -11,7 +11,7 @@ This is my personal portfolio website, built using HTML and CSS to showcase my p
 
 ## How to View the Website
 
-Visit the live demo here: [Rediet Woudma Portfolio](https://<your-live-link>)
+Visit the live demo here: [Rediet Woudma Portfolio](https://inter-tec-gfpscivmj-rediet-ws-projects.vercel.app/)
 
 ## Setup Instructions
 
