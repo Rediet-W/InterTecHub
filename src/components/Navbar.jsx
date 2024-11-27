@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md mx-auto container">
+    <nav className="bg-white shadow-md mx-auto container max-w-full">
       {/* Desktop Navbar */}
       <div className="hidden lg:flex items-center justify-between px-4 py-2">
         {/* Logo */}

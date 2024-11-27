@@ -35,7 +35,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <div className="flex bg-gebeya-purple justify-between text-white gap-3 p-4 py-8 mx-auto container flex-col md:flex-row">
+      <div className="flex bg-gebeya-purple justify-between max-w-full text-white gap-3 p-4 py-8 mx-auto container flex-col md:flex-row">
         <div className="flex flex-col justify-center gap-4">
           <p className="font-bold text-4xl md:text-8xl order-1">Gebeya</p>
           <img src={shoe} alt="shoe" className="w-60 h-30 hidden md:visible " />
@@ -80,7 +80,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="flex space-x-4 overflow-scroll">
+        <div className="flex space-x-4 overflow-x-scroll mx-auto container hide-scrollbar">
           <Collection
             name="French Kiss Bag"
             description="ALDO"
@@ -106,7 +106,7 @@ const HomePage = () => {
             image={bdress}
           />
         </div>
-        <div className="flex gap-4 mt-4 w-full overflow-scroll">
+        <div className="flex gap-4 mt-4 w-full overflow-x-scroll hide-scrollbar">
           {tags.map((tag) => (
             <div
               key={tag}
@@ -119,7 +119,7 @@ const HomePage = () => {
             </div>
           ))}
         </div>
-        <div className="grid gap-2 grid-cols-2 md:grid md:grid-cols-6">
+        <div className="grid gap-2 grid-cols-2 md:grid md:grid-cols-6 mx-auto container">
           <SmallCollection image={tshoe} name="Shoes" />
           <SmallCollection image={tbag} name="Bags" />
           <SmallCollection image={tjacket} name="Jackets" />
@@ -139,7 +139,7 @@ const HomePage = () => {
             See more &gt;&gt;&gt;{" "}
           </div>
         </div>
-        <div className="bg-gray-400 flex flex-wrap rounded-md  items-center my-2">
+        <div className="bg-gray-400 flex flex-wrap rounded-md  items-center my-2 mx-auto container">
           <div className="text-white space-y-4 max-w-md p-4">
             <p className="text-3xl font-bold leading-tight">
               Our Curated Summer Collection
