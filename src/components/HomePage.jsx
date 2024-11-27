@@ -35,31 +35,44 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <div className="flex bg-gebeya-purple justify-between max-w-full text-white gap-3 p-4 py-8 mx-auto container flex-col md:flex-row">
-        <div className="flex flex-col justify-center gap-4">
-          <p className="font-bold text-4xl md:text-8xl order-1">Gebeya</p>
-          <img src={shoe} alt="shoe" className="w-60 h-30 hidden md:visible " />
+      <div className="flex flex-col md:flex-row bg-gebeya-purple text-white justify-between items-center px-4 md:px-8 py-10 max-w-screen-xl mx-auto">
+        {/* Left Section */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
+          <p className="font-bold text-4xl md:text-8xl">Gebeya</p>
+          <img
+            src={shoe}
+            alt="shoe"
+            className="w-24 h-24 md:w-40 md:h-40 rounded-full border-4 border-white"
+          />
         </div>
-        <div className="flex flex-col gap-4 justify-between items-center py-11">
-          <img src={man} alt="man" className="w-40 h-20 md:w-80 md:h-40" />
-          <button className="px-8 bg-gebeya-orange py-2 text-black order-4">
-            {" "}
+
+        {/* Center Section */}
+        <div className="flex flex-col items-center gap-4">
+          <img
+            src={man}
+            alt="man"
+            className="w-28 h-28 md:w-48 md:h-48 rounded-full border-4 border-white"
+          />
+          <button className="px-6 py-3 bg-gebeya-orange text-black font-medium rounded-md">
             Explore Now
           </button>
         </div>
-        <div className="flex flex-col items-center gap-3">
-          <p className="whitespace-normal break-words text-xl order-3">
+
+        {/* Right Section */}
+        <div className="flex flex-col items-center md:items-end text-center md:text-right gap-4">
+          <p className="font-bold text-4xl md:text-8xl hidden md:block">SHOP</p>
+          <p className="text-sm md:text-lg max-w-xs">
             Discover a world of convenience with our user-friendly platform,
-            curaated collections, and exceptional customer service
+            curated collections, and exceptional customer service.
           </p>
-          <p className="font-bold text-8xl hidden md:visible">SHOP</p>
           <img
             src={shirt}
-            alt="white shirt"
-            className="w-60 h-30 hidden md:visible"
+            alt="shirt"
+            className="w-24 h-24 md:w-40 md:h-40 rounded-full border-4 border-white"
           />
         </div>
       </div>
+
       <div className="pl-4 m-4">
         <div className="flex justify-between">
           <p className="text-2xl font-bold">Latest Collections</p>

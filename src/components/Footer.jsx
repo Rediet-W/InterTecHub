@@ -3,7 +3,7 @@ import logo from "../assets/logo2.png";
 import insta from "../assets/instagram.png";
 import x from "../assets/x.png";
 import whatsapp from "../assets/whatsapp.png";
-import arrow from "../assets/downarrow.png"; // Use your arrow image path here
+import arrow from "../assets/downarrow.png";
 
 const Footer = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -13,10 +13,59 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-gebeya-purple w-full text-white mx-auto container">
-      {/* Main Footer Content */}
-      <div className="flex flex-col items-center py-6 px-4">
+    <div className="bg-gebeya-purple w-full text-white">
+      {/* Desktop View */}
+      <div className="hidden lg:flex lg:flex-row-reverse justify-between items-start py-6 px-16">
         {/* Sections */}
+        <div className="flex  gap-16">
+          {/* About Section */}
+          <div>
+            <p className="text-lg font-bold mb-4">About</p>
+            <ul className="space-y-2">
+              <li>About Us</li>
+              <li>News & Blog</li>
+              <li>Location</li>
+            </ul>
+          </div>
+
+          {/* Products Section */}
+          <div>
+            <p className="text-lg font-bold mb-4">Products</p>
+            <ul className="space-y-2">
+              <li>Pricing</li>
+              <li>Store</li>
+              <li>Features</li>
+            </ul>
+          </div>
+
+          {/* Discover Section */}
+          <div>
+            <p className="text-lg font-bold mb-4">Discover</p>
+            <ul className="space-y-2">
+              <li>Contact Us</li>
+              <li>Customers</li>
+              <li>Affiliates</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Logo and Social Media */}
+        <div className="flex flex-col items-center space-y-6">
+          {/* Logo */}
+          <img src={logo} alt="Logo" className="w-16 h-16" />
+
+          {/* Social Media Icons */}
+          <div className="flex gap-4">
+            <img src={insta} alt="instagram" className="w-6 h-6" />
+            <img src={whatsapp} alt="whatsapp" className="w-6 h-6" />
+            <img src={x} alt="x" className="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile View */}
+      <div className="lg:hidden flex flex-col items-center py-6 px-4">
+        {/* Collapsible Sections */}
         <div className="w-full space-y-4">
           {/* About Section */}
           <div className="border-b border-white pb-4">
@@ -34,11 +83,11 @@ const Footer = () => {
               />
             </div>
             {openSection === "about" && (
-              <div className="mt-2 space-y-2">
-                <p>About Us</p>
-                <p>News & Blog</p>
-                <p>Location</p>
-              </div>
+              <ul className="mt-2 space-y-2">
+                <li>About Us</li>
+                <li>News & Blog</li>
+                <li>Location</li>
+              </ul>
             )}
           </div>
 
@@ -58,11 +107,11 @@ const Footer = () => {
               />
             </div>
             {openSection === "products" && (
-              <div className="mt-2 space-y-2">
-                <p>Pricing</p>
-                <p>Store</p>
-                <p>Features</p>
-              </div>
+              <ul className="mt-2 space-y-2">
+                <li>Pricing</li>
+                <li>Store</li>
+                <li>Features</li>
+              </ul>
             )}
           </div>
 
@@ -82,11 +131,11 @@ const Footer = () => {
               />
             </div>
             {openSection === "discover" && (
-              <div className="mt-2 space-y-2">
-                <p>Contact Us</p>
-                <p>Customers</p>
-                <p>Affiliates</p>
-              </div>
+              <ul className="mt-2 space-y-2">
+                <li>Contact Us</li>
+                <li>Customers</li>
+                <li>Affiliates</li>
+              </ul>
             )}
           </div>
         </div>
@@ -94,13 +143,13 @@ const Footer = () => {
         {/* Logo and Social Media Icons */}
         <div className="flex flex-col items-center space-y-6 mt-6">
           {/* Logo */}
-          <img src={logo} alt="Logo" className="w-10 h-10" />
+          <img src={logo} alt="Logo" className="w-16 h-16" />
 
           {/* Social Media Icons */}
           <div className="flex gap-4">
-            <img src={insta} alt="instagram" className="w-5 h-5" />
-            <img src={whatsapp} alt="whatsapp" className="w-5 h-5" />
-            <img src={x} alt="x" className="w-5 h-5" />
+            <img src={insta} alt="instagram" className="w-6 h-6" />
+            <img src={whatsapp} alt="whatsapp" className="w-6 h-6" />
+            <img src={x} alt="x" className="w-6 h-6" />
           </div>
         </div>
       </div>
