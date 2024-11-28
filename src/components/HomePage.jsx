@@ -73,7 +73,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="pl-4 m-4">
+      <div className="pl-4 m-4 max-w-screen-xl mx-auto">
         <div className="flex justify-between">
           <p className="text-2xl font-bold">Latest Collections</p>
           <div className="flex gap-3 ">
